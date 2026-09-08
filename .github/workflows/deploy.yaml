@@ -23,6 +23,6 @@ jobs:
       - name: Deploy CloudFormation stack
         run: |
           aws cloudformation deploy \
-            --template-file simple_s3_template.yaml \
+            --template-file infra/simple_s3_template.yaml \
             --stack-name yt-cf-demo-louie-stack \
             --capabilities CAPABILITY_NAMED_IAM
